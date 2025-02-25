@@ -17,3 +17,9 @@ console.log(reverseString("sdrawkcab"));
 console.log(countCharacters(sentence));
 
 console.log(capitalizeFirstLetter("sdrawkcab"));
+
+// Just as a note. I had to install tsx (npm install -D tsx) to enable myself to run the file main.ts.
+// I kept running into TypeError for the file extension .ts and from I could find out online
+// it appears to be an issue with Node.js and the recommendation was to do the tsx install.
+// If you end up needing to take this step as well the command to run the file with tsx is
+// npx tsx ./main.ts.
