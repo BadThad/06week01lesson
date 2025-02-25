@@ -6,8 +6,12 @@ export const countCharacters = (str: string): number => {
     return str.length;
 };
 
+// In the code below the expression (/\s/g, "") tells the function to replace all
+// match whitespace (\s) detected globally (g), and not just the first space, with 
+// an empty space ("").
+
 export const countCharsNoSpace = (str: string): number => {
-    return str.split("").length;
+    return str.replace(/\s/g, "").length
 }
 
 export const capitalizeFirstLetter = (str: string): string => {
