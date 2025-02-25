@@ -7,5 +7,6 @@ export const countCharacters = (str: string): number => {
 };
 
 export const capitalizeFirstLetter = (str: string): string => {
-    return str.charAt(0).toUpperCase();
+    const firstLetter = str.slice(0, 1);
+    return firstLetter.toUpperCase() + str.substring(1);
 };
